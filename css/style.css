@@ -1,0 +1,1506 @@
+@charset "UTF-8";
+
+/* reset */
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #333;
+    box-sizing: border-box;
+    font-family: '맑은 고딕';
+}
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.html{
+    font-size: 20px;
+}
+
+/* .inner{
+    width: 100rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+} */
+
+/* color 
+보라색 : #a593e0 -> 165, 147, 224
+회색 : #e0e3da -> 224, 227, 218
+흰색 : fffff3 -> 255, 255, 243
+연한 청록색 : 566270 -> 86, 98, 112
+*/
+
+/* header */
+.headerContainer{
+    width: 100%;
+    height: 5rem;
+    position: relative;
+    background: #f8f8ee;
+}
+.logo{
+    width: 11.1rem;
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+}
+.logo span{
+    display: block;
+    font-size: .7rem;
+    text-align: center;
+    color: #999;
+}
+/* .logo img{
+    width: 35%;
+} */
+
+.gnb{
+    width: 35rem; /*35rem*/
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+}
+.gnb > a{
+    display: none;
+}
+.mainMenu{
+    width: 100%;
+}
+.mainMenu li{
+    width: 20%;
+    float: left;
+}
+.mainMenu li a{
+    display: block;
+    line-height: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #aaa;
+    transition: 0.1s;
+}
+.mainMenu li:hover a{
+    color: #7257cc;
+    font-size: 1.2rem;
+}
+
+/* contents */
+.contents{
+    width: 100%;
+    height: 81.8vh;
+    background: #fffff3;
+    position: relative;
+    overflow: hidden;
+}
+
+/* home */
+.home{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.home p{
+    width: 100%;
+    /* line-height: 11rem; */
+    font-size: 10rem;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #111;
+}
+
+/* about */
+.about{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.aboutTit{
+    display: block;
+    color: #222; /*111 or ddd*/
+    font-size: 2.1rem;
+    margin-bottom: .8rem;
+}
+.aboutTit > img{
+    width: 2.5rem;/*11%*/
+    opacity: 60%;
+    margin-right: .4rem;
+}
+
+.introduce{
+    width: 25%;
+    height: 40%;
+    /* background: #eeeec6; */
+    border: solid .2rem #aaa;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-left: 13%;
+    margin-top: 3%;
+}
+.introduce > li{
+    width: 100%;
+    height: 18%;
+}
+.introduce > li > p{
+    display: block;
+    line-height: 3rem;
+    text-indent: 3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /* color: #566270; */
+}
+.introduce > li > p > span{
+  
+    margin-left: 1.5rem;
+    font-weight: 300;
+}
+
+
+.certificate{
+    width: 25%;
+    height: 40%;
+    border: solid .2rem #aaa;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    margin-left: 13%;
+    margin-top: 3%;
+}
+.certificate > li{
+    width: 100%;
+    height: 15%;
+}
+.certificate > li > p{
+    display: block;
+    line-height: 3rem;
+    text-indent: 3rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+
+.experience{
+    width: 45%;
+    height: 50%;
+    border: solid .2rem #aaa;
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    margin-left: 42%;
+    margin-top: -29%;
+}
+.experience > h2 > img{
+    width: 2.8rem; /*6%*/
+    opacity: 50%;
+}
+.experience > h2{
+    margin-bottom: 1.2rem;
+}
+.experience > li{
+    width: 100%;
+    height: 36%;
+}
+.experience > li > p{
+    display: block;
+    line-height: 2.6rem;
+    text-indent: 3rem;
+    font-size: 1.1rem;
+}
+.experience > li > p:first-child{
+    font-weight: bold;
+}
+.experience > li > p:last-child{
+    margin-left: .8rem;
+}
+
+/* skills */
+.skills{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 0 25%;
+    padding-top: 6%;
+}
+/* .skills > div{
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #eee;
+} */
+.skills > ul{
+    width: 100%;
+    height: 16%;
+}
+.skills > ul > h2{
+    display: inline;
+    line-height: 1rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    color: #444;
+}
+.skills > ul > p{
+    display: inline;
+    line-height: 1rem;
+    font-size: 1.1rem;
+    margin-left: 2.5rem;
+    color: #566270;
+}
+
+/* .html{
+    width: 100%;
+    height: 15%;
+} */
+.html > img{
+    width: 2.6rem;
+}
+.css > img{
+    width: 2.6rem;
+}
+.script > img{
+    width: 1.6rem;
+    margin-left: .5rem;
+}
+.photoshop > img{
+    width: 2rem;
+    margin-left: .3rem;
+}
+.illustrator > img{
+    width: 2rem;
+    margin-left: .3rem;
+}
+.afterEffects > img{
+    width: 2rem;
+    margin-left: .3rem;
+}
+
+
+/* portfolio */
+.portfolio{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.portfolioList{
+    width: 85rem;
+    height: 32rem;
+    /* margin: 0 auto; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.portfolioList > li{
+    width: 40rem;
+    height: 32rem;
+    float: left;
+    position: relative;
+    /* position: absolute; */
+    /* left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+}
+.portfolioList > li:first-child{
+    margin-right: 5rem;
+}
+
+.portfolioList > li > div:first-child{
+    width: 40rem;
+    height: 22.5rem;
+    display: block;
+}
+/* .portfolioList > li > div:first-child > a{
+    width: 100%;
+    height: 100%;
+} */
+.portfolioList > li > div:first-child > img{
+    width: 100%;
+    height: 100%;
+}
+
+.portfolioList > li > div:last-child{
+    position: absolute;
+    width: 25rem;
+    height: 8rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.portfolioList > li > div:last-child > a:first-child{
+    display: inline;
+    border: solid .15rem #eee;
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    margin-left: 5rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.portfolioList > li > div:last-child > a:nth-child(2){
+    display: inline;
+    border: solid .15rem #eee;
+    padding: .5rem 1rem;
+    border-radius: 3rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.portfolioList > li > div:last-child > span{
+    display: block;
+    text-align: center;
+    margin-top: 1.6rem;
+    font-size: .9rem;
+    color: #666;
+}
+
+.portfolioList > li > div:last-child > a:first-child:hover{
+    background: #888;
+    color: #eee;
+}
+.portfolioList > li > div:last-child > a:nth-child(2):hover{
+    background: #888;
+    color: #eee;
+}
+
+/* .prevBtn{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 35%;
+    left: -3%;
+    background: url("../images/arrow-left.png") no-repeat center center/100%;
+    border: none;
+    cursor: pointer;
+    opacity: 60%;
+}
+.nextBtn{
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    top: 35%;
+    right: 47%;
+    background: url("../images/arrow-right.png") no-repeat center center/100%;
+    border: none;
+    cursor: pointer;
+    opacity: 60%;
+} */
+
+/* design */
+.design{
+    width: 100%;
+    height: 100%;
+}
+.board{
+    width: auto;
+    height: auto;
+    /* text-align: center; */
+}
+.tabMenu{
+    width: 20%;
+    height: 4rem;
+    margin: 0 auto;
+    /* padding: 0 30rem; */
+    /*margin-left: 43%;*//*62%*/
+    /* transform: translateX(-50%); */
+}
+.tabMenu > li{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.tabMenu > li > a{
+    display: block;
+    /* border: solid 1px #eee; */
+    /* padding: 1.3rem 1.5rem; */
+    line-height: 4rem;
+    color: #566270;
+    font-weight: bold;
+    transition: 0.3s;
+    text-align: center;
+}
+.tabMenu > li:first-child:hover > a{
+    color: #a593e0;
+}
+.tabMenu > li:last-child:hover > a{
+    color: #a593e0;
+}
+
+.tabList{
+    /* width: 60vw; */
+    width: 100%;
+    padding: 0 18%;
+    height: 70vh; /*76.9vh*//*75.2vh*/
+    margin: 0 auto;
+    margin-top: 1rem;
+    box-sizing: border-box;
+}
+
+.designPs{
+    width: 64%;
+    height: 70vh;
+    position: absolute;
+}
+.designPs > li{
+    position: absolute;
+}
+
+.designPs > li:first-child{
+    width: 9.1rem; /*144.72px*/
+    height: 100%; /*678.3px*/ /*41.95rem*/
+    left: 0;
+} 
+.designPs > li:nth-child(2){
+    width: 21.65rem; /*346.95px*/
+    height: 100%; /*678.3px*/ /*41.95rem*/
+    left: 20%;
+}
+.designPs > li:nth-child(3){
+    width: 31.8rem; /*31.8rem*//*506.88px*/ /*44.5%*/
+    height: 28.75rem; /*28.75rem*//*459.64px*/
+    right: 0;
+    top: 0;
+}
+.designPs > li:last-child{
+    width: 31.8rem; /*31.8rem*//*506.88px*/ /*44.5%*/
+    height: 9.4rem; /*149.5px*/
+    right: 0;
+    bottom: 0;
+}
+
+.designPs > li > a > img{
+    position: absolute;
+    transition: 0.3s;
+}
+.designPs > li:first-child > a > img{
+    height: 100%;
+    /* left: 0; */
+}
+.designPs > li:nth-child(2) > a > img{
+    height: 100%;    /* left: 18%; */
+}
+.designPs > li:nth-child(3) > a > img{
+    width: 100%;
+    /* right: 0; */
+}
+.designPs > li:last-child > a > img{
+    width: 100%;
+    /* right: 0;
+    bottom: 0; */
+}
+
+.designPs > li:first-child:hover > a > img{
+    opacity: 70%;
+    height: 102%;
+}
+.designPs > li:nth-child(2):hover > a > img{
+    opacity: 70%;
+    height: 102%;
+}
+
+.designPs > li:nth-child(3):hover > a > img{
+    opacity: 70%;
+    width: 102%;
+}
+.designPs > li:last-child:hover > a > img{
+    opacity: 70%;
+    width: 102%;
+}
+
+
+.designAi{
+    width: 64%;
+    height: 70vh;
+    position: absolute;
+}
+.designAi > li{
+    /* width: 60vw;
+    height: 70vh; */
+    position: absolute;
+}
+
+.designAi > li:first-child{
+    width: 36rem; /*576px*/
+    height: 6rem; /*96px*/
+    left: 0;
+    top: 0;
+} 
+.designAi > li:nth-child(2){
+    width: 36rem; /*576px*/
+    height: 15rem; /*240px*/
+    left: 0;
+    top: 21%;
+}
+.designAi > li:nth-child(3){
+    width: 36rem;
+    height: 15rem;
+    left: 0;
+    bottom: 0;
+}
+.designAi > li:nth-child(4){
+    width: 25.2rem; /*403.19px*/
+    height: 21.8rem; /*347.59px*/
+    right: 0;
+    top: 0;
+}
+.designAi > li:last-child{
+    width: 25.2rem; /*403.19px*/
+    height: 17.8rem; /*284.91px*/
+    right: 0;
+    bottom: 0;
+}
+
+.designAi > li > a > img{
+    position: absolute;
+    transition: 0.3s;
+}
+.designAi > li:first-child > a > img{
+    height: 100%;
+    /* left: 0;
+    top: 15%; */
+}
+.designAi > li:nth-child(2) > a > img{
+    height: 100%;
+    /* left: 32.5%;
+    top: 15%; */
+}
+.designAi > li:nth-child(3) > a > img{
+    height: 100%;
+}
+.designAi > li:nth-child(4) > a > img{
+    width: 100%;
+    /* right: 0; */
+}
+.designAi > li:last-child > a > img{
+    width: 100%;
+    /* right: 0;
+    bottom: 0; */
+}
+
+.designAi > li:first-child:hover > a > img{
+    opacity: 70%;
+    height: 102%;
+}
+.designAi > li:nth-child(2):hover > a > img{
+    opacity: 70%;
+    height: 102%;
+}
+.designAi > li:nth-child(3):hover > a > img{
+    opacity: 70%;
+    height: 102%;
+}
+
+.designAi > li:nth-child(4):hover > a > img{
+    opacity: 70%;
+    width: 102%;
+}
+.designAi > li:last-child:hover > a > img{
+    opacity: 70%;
+    width: 102%;
+}
+
+/* footer */
+.footerContainer{
+    width: 100%;
+    height: 6rem;
+    background: #fffff3; /*566270*/
+}
+
+.info{
+    width: 100%;
+    height: 33%;
+    /* background: #eee; */
+}
+.info > p{
+    display: block;
+    text-align: center;
+    line-height: 2rem;
+    color: #b8bbb3;
+    font-size: .95rem;
+}
+
+.copy{
+    width: 100%;
+    height: 66%;
+    /* background: #aaa; */
+}
+.copy > p{
+    display: block;
+    text-align: center;
+    line-height: 1.6rem;
+    color: #a4a79f;
+}
+
+.copy > p:first-child{
+    font-size: .95rem;
+}
+.copy > p:last-child{
+    font-size: .9rem;
+    font-style: italic;
+}
+.copy > p:last-child > span{
+    font-weight: bold;
+    color: #888;
+}
+
+/* popUp */
+.popUpContainer{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+}
+.popUpContainer div{
+    position: absolute;
+    overflow: scroll;
+    background: #eee;
+    border: solid 1px #666;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.designPs01{
+    width: 45vw;
+    height: 85vh;
+    top: 5rem;
+    left: 32rem;
+}
+.designPs01 img{
+    width: 100%;
+}
+
+.designPs02{
+    width: 45vw;
+    height: 85vh;
+    top: 5rem;
+    left: 32rem;
+}
+.designPs02 img{
+    width: 100%;
+}
+
+.designPs03{
+    width: 45vw;
+    top: 6rem;
+    left: 32rem;
+}
+.designPs03 img{
+    width: 100%;
+}
+
+.designPs04{
+    width: 45vw;
+    top: 22rem;
+    left: 32rem;
+}
+.designPs04 img{
+    width: 100%;
+}
+
+.designAi01{
+    width: 64vw;
+    top: 3.5rem;
+    left: 41rem;
+}
+.designAi01 img{
+    width: 100%;
+}
+
+.designAi02{
+    width: 64vw;
+    top: 3.5rem;
+    left: 41rem;
+}
+.disignAi02 img{
+    width: 100%;
+}
+
+.designAi03{
+    width: 64vw;
+    top: 7rem;
+    left: 33rem;
+}
+.designAi03 img{
+    width: 100%;
+}
+
+.designAi04{
+    width: 45vw;
+    /* height: 71vh; */
+    top: 11rem;
+    left: 33rem;
+}
+.designAi04 img{
+    width: 100%;
+}
+
+.designAi05{
+    width: 45vw;
+}
+.designAi05 img{
+    width: 100%;
+}
+
+.closeBtn{
+    width: 4.5rem;
+    height: 3rem;
+    position: absolute;
+    /* left: 96.6vw; */
+    right: 2rem;
+    top: 5rem;
+    /* transform: translateX(-50%); */
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: solid 1px #222;
+    border-radius: .5rem;
+    background: #444;
+    color: #bbb;
+    text-align: center;
+    line-height: 2.8rem;
+}
+
+/* pfPopUp */
+.pfPopUpContainer{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.pfPopUp{
+    width: 70%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.pfInfo01{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.pfInfo01 img{
+    width: 100%;
+    height: 100%;
+}
+.pfInfo02{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.pfInfo02 img{
+    width: 100%;
+    height: 100%;
+}
+.pfCloseBtn{
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    border: solid .1rem #333;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+}
+
+/* 반응형 */
+@media (max-width: 480px){
+    /* header */
+    .headerContainer{
+        height: 4rem;
+    }
+    .logo{
+        width: 7rem;
+        left: 1rem;
+        font-size: 1rem;
+    }
+    .logo span{
+        font-size: .5rem;
+    }
+
+    .gnb{
+        width: 100vw;
+        height: auto;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translateX(0%);
+    }
+    .gnb > a{
+        display: block;
+    }
+    .gnb > a > img{
+        width: 2rem;
+        position: absolute;
+        top: .9rem;
+        right: 1rem;
+    }
+    .mainMenu{
+        width: 100%;
+        height: auto;
+        background: #eee;
+    }
+    .mainMenu > li{
+        width: 100%;
+        height: 20%;
+    }
+    .mainMenu > li > a{
+        line-height: 5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #566270;
+    }
+    .mainMenu > li:hover > a{
+        color: #333;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    /* contents */
+    .contents{
+        height: 82.5vh;
+    }
+
+    /* home */
+    .home p{
+        font-size: 2.2rem;
+    }
+
+    /* about */
+    .aboutTit{
+        font-size: 1.2rem;
+        margin-bottom: .6rem;
+    }
+    .aboutTit > img{
+        width: 1.4rem;
+    }
+
+    .introduce{
+        width: 100%;
+        height: 32%;
+        border: solid .1rem #aaa;
+        padding: 1rem;
+        margin-left: 0;
+        margin-top: 2%;
+    }
+    .introduce > li > p{
+        line-height: 1.7rem;
+        text-indent: 2.3rem;
+        font-size: .9rem;
+    }
+    .introduce > li > p > span{
+        font-size: .8rem;
+    }
+
+    .certificate{
+        width: 100%;
+        height: 32%;
+        border: solid .1rem #aaa;
+        padding: 1rem;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+    .certificate > li > p{
+        line-height: 1.7rem;
+        font-size: .8rem;
+        text-indent: 2.3rem;        
+    }
+
+    .experience{
+        width: 100%;
+        height: 32%;
+        border: solid .1rem #aaa;
+        padding: 1rem;
+        margin-left: 0;
+        margin-top: 1%;
+    }
+    .experience > h2{
+        margin-bottom: .3rem;
+    }
+    .experience > h2 > img{
+        width: 1.6rem;
+    }
+    .experience > li > p{
+        font-size: .8rem;
+        line-height: 1.7rem;
+        text-indent: 2.3rem;
+    }
+    .experience > li > p:last-child{
+        margin-left: 0;
+        font-size: .7rem;
+    }
+
+    /* skills */
+    .skills{
+        padding: 10% 3%;
+    }
+    .skills > ul > h2{
+        font-size: 1rem;
+        line-height: 1.1rem;
+        margin-left: 0;
+    }
+    .skills > ul > p{
+        display: block;
+        /* padding-left: 1rem; */
+        font-size: .75rem;
+        margin-left: 2rem;
+        line-height: 1.2rem;
+        margin-top: .3rem;
+    }
+    .skills > ul:last-child > p{
+        margin-left: 3.2rem;
+    }
+
+    .html > img{
+        width: 1.5rem;
+    }
+    .css > img{
+        width: 1.5rem;
+    }
+    .script > img{
+        width: 1.05rem;
+        margin-left: .2rem;
+    }
+    .photoshop > img{
+        width: 1.2rem;
+        margin-left: .2rem;
+    }
+    .illustrator > img{
+        width: 1.2rem;
+        margin-left: .2rem;
+    }
+    .afterEffects > img{
+        width: 1.2rem;
+        margin-left: .2rem;
+    }
+
+    /* portfolio */
+    .portfolioList{
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        transform: none;
+        padding: .5rem;
+    }
+    .portfolioList > li{
+        width: 100%;
+        height: 50%;
+        float: none;
+        display: block;
+    }
+    .portfolioList > li:first-child{
+        margin-right: 0;
+    }
+
+    .portfolioList > li > div:first-child{
+        width: 100%;
+        height: 70%;
+    }
+    .portfolioList > li > div:last-child{
+        width: 100%;
+        height: 28%;
+        padding-bottom: 2%;
+        left: 0;
+        transform: none;
+    }
+
+    .portfolioList > li > div:last-child > a:first-child{
+        font-size: .6rem;
+        padding: .2rem .4rem;
+        border-radius: .7rem;
+        margin-left: 6.5rem;
+    }
+    .portfolioList > li > div:last-child > a:nth-child(2){
+        font-size: .6rem;
+        padding: .2rem .4rem;
+        border-radius: .7rem;
+    }
+    .portfolioList > li > div:last-child > span{
+        margin-top: .6rem;
+        font-size: .7rem;
+    }
+
+    /* design */
+    .tabMenu{
+        width: 60%;
+    }
+    .tabMenu > li > a{
+        font-size: .75rem;
+    }
+
+    .tabList{
+        width: 100%;
+        height: 72.5vh;
+        padding: 0 2%;
+        margin-top: 0;
+    }
+
+    .designPs{
+        width: 96%;
+        height: 72.5vh;
+    }
+
+    .designPs > li:first-child{
+        width: 5.6rem;
+        height: 26rem;
+    }
+    .designPs > li:nth-child(2){
+        height: 17.5rem;
+        width: 9rem;
+        left: auto;
+        right: 0;
+    }
+    .designPs > li:nth-child(3){
+        width: 9rem;
+        height: 8.2rem;
+        top: 53.5%;
+
+    }
+    .designPs > li:last-child{
+        width: 21.6rem;
+        height: 6.4rem;
+    }
+
+    .designAi{
+        width: 96%;
+        height: 72.5vh;
+    }
+
+    .designAi > li:first-child{
+        width: 21.6rem;
+        height: 3.6rem;
+        top: 28%;
+    }
+    .designAi > li:nth-child(2){
+        width: 21.6rem;
+        height: 9rem;
+        top: 43%;
+    }
+    .designAi > li:nth-child(3){
+        width: 21.6rem;
+        height: 9rem;
+    }
+    .designAi > li:nth-child(4){
+        width: 9rem;
+        height: 8rem;
+        right: auto;
+        left: 0;
+    }
+    .designAi > li:last-child{
+        width: 11.2rem;
+        height: 8rem;
+        bottom: auto;
+        top: 0;
+    }
+
+    /* footer */
+    .footerContainer{
+        height: 4rem;
+    }
+    
+    .info > p{
+        line-height: 1.3rem;
+        font-size: .85rem;
+    }
+    
+    .copy > p{
+        line-height: 1.3rem;
+    }
+    .copy > p:first-child{
+        font-size: .6rem;
+    }
+    .copy > p:last-child{
+        font-size: .7rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 999px/*766px*/){
+    /* header */
+    .gnb{
+        width: 100vw;
+        height: auto;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        transform: translateX(0%);
+    }
+    .gnb > a{
+        display: block;
+    }
+    .gnb > a > img{
+        width: 2.5rem;
+        position: absolute;
+        top: 1.1rem;
+        right: 3rem;
+    }
+    .mainMenu{
+        width: 100%;
+        height: auto;
+        background: #eee;
+    }
+    .mainMenu > li{
+        width: 100%;
+        height: 20%;
+    }
+    .mainMenu > li > a{
+        line-height: 5rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #566270;
+    }
+    .mainMenu > li:hover > a{
+        color: #333;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    /* home */
+    .home p{
+        line-height: 5.5rem;
+        font-size: 4.5rem;
+        top: 50%;
+        left: 5%;
+    }
+
+    /* about */
+    .aboutTit{
+        color: #333;
+        font-size: 1.7rem;
+        margin-bottom: .2rem;
+    }
+    .aboutTit > img{
+        width: 2rem;
+        opacity: 50%;
+    }
+    .introduce{
+        width: 90%;
+        height: 29%;
+        padding: 1.5rem 2rem;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .introduce > li > p{
+        text-indent: 2.5rem;
+        font-size: 1rem;
+    }
+
+    .certificate{
+        width: 90%;
+        height: 29%;
+        padding: 1.5rem 2rem;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .certificate > li > p{
+        line-height: 2rem;
+        text-indent: 2.5rem;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    .experience{
+        width: 90%;
+        height: 37%;
+        padding: 1.5rem 2rem;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .experience > h2 > img{
+        width: 2.3rem;/*11%*/
+    }
+    .experience > li > p{
+        line-height: 1.5rem;
+        text-indent: 2.5rem;
+        font-size: 1rem;
+    }
+    .experience > li > p:last-child{
+        font-size: .85rem;
+    }
+
+    /* skills */
+    .skills > ul > h2{
+        font-size: 1.3rem;
+        margin-left: .6rem;
+    }
+    .skills > ul > p{
+        display: block;
+        line-height: 1.5rem;
+        font-size: .9rem;
+    }
+    .skills > ul:last-child > p{
+        text-indent: 2rem;
+    }
+
+    /* portfolio */
+    .portfolioList{
+        width: 30rem;
+        height: 48rem;
+        top: 0;
+        transform: translate(-50%,0);
+    }
+    .portfolioList > li{
+        width: 30rem;
+        height: 23.5rem;
+        float: none;
+    }
+    .portfolioList > li:first-child{
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    .portfolioList > li > div:first-child > img{
+        width: 30rem;
+        height: 16.875rem;
+    }
+
+    .portfolioList > li > div:last-child{
+        width: 20rem;
+        height: 5rem;
+    }
+    .portfolioList > li > div:last-child > a:first-child{
+        padding: .3rem .5rem;
+        border-radius: 1.5rem;
+        margin-left: 4.2rem;
+        font-size: .9rem;
+    }
+    .portfolioList > li > div:last-child > a:nth-child(2){
+        padding: .3rem .5rem;
+        border-radius: 1.5rem;
+        font-size: .9rem;
+    }
+    .portfolioList > li > div:last-child > span{
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+
+    /* design */
+    .tabMenu{
+        width: 40%;
+    }
+    .tabMenu > li > a{
+        font-size: .9rem;
+    }
+    .tabList{
+        padding: 0 28.2%;
+        margin: auto;
+    }
+    .designPs{
+        width: 43.6%; /*94vw*/
+    }
+    .designPs > li:first-child{
+        height: 33rem; /*77.5%*/
+        width: 7.2rem;
+    }
+    .designPs > li:nth-child(2){
+        height: 21.5rem; /*50%*/
+        width: 11.1rem; /*40%*/
+        left: 58.4%; /*60%*/
+    }
+    .designPs > li:nth-child(3){
+        width: 11rem; /*40%*/
+        height: 10rem; /*23.5%*/
+        top: 55%;
+        left: 58.4%;
+    }
+    .designPs > li:last-child{
+        width: 100%; /*100%*/ /*26.7rem*/
+        height: 8rem; /*18.5%*/
+    }
+
+    .designAi{
+        width: 43.6%; /*94vw*/
+        margin: 0 auto;
+    }
+    .designAi > li:first-child{
+        height: 4.45rem; /*12%*/
+        width: 26.7rem; /*55%*/
+        top: 30%;
+    }
+    .designAi > li:nth-child(2){
+        height: 11.1rem; /*30%*/
+        width: 26.7rem; /*55%*/
+        top: 44%; /*25%*/
+    }
+    .designAi > li:nth-child(3){
+        height: 11.1rem; /*30%*/
+        width: 26.7rem; /*55%*/
+        
+    }
+    .designAi > li:nth-child(4){
+        width: 11.5rem; /*30%*/
+        height: 10rem; /*34%*/
+        left: 0;
+    }
+    .designAi > li:last-child{
+        width: 14rem; /*30%*/
+        height: 10rem; /*28%*/
+        left: 13.7rem;
+        top: 0;
+    }
+
+    /* footer */
+    .info > p{
+        /* line-height: 1rem; */
+    }
+    .copy > p{
+        line-height: 1.2rem;
+    }
+    .copy > p:first-child{
+        font-size: .85rem;
+    }
+    .copy > p:last-child{
+        font-size: .8rem;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1561px/*1320px이었음*//*959px*//*1023px*/){
+    /* home */
+    .home p{
+        line-height: 7.5rem;
+        font-size: 7rem;
+        top: 50%;
+        left: 5%;
+    }
+
+    /* about */
+    .aboutTit{
+        font-size: 2rem;
+    }
+    .aboutTit > img{
+        width: 2.3rem;
+    }
+
+    .introduce{
+        width: 43%;
+        padding: 1.5rem 2rem;
+        margin-left: 5%;
+        /* margin-top: 5%; */
+        position: absolute;
+        top: 1.8rem;
+    }
+    .introduce > li > p{
+        line-height: 3rem;
+        text-indent: 2.5rem;
+    }
+
+    .certificate{
+        width: 43%;
+        padding: 1.5rem 2rem;
+        margin-left: 0;
+        /* margin-top: 4%; */
+        position: absolute;
+        top: 1.8rem;
+        left: 52%; /*35rem*/
+    }
+    .certificate > li > p{
+        line-height: 3rem;
+    }
+
+    .experience{
+        width: 90%;
+        height: 42%;
+        padding: 1.5rem 2rem;
+        position: absolute;
+        bottom: 5%;
+        left: -37%;
+    }
+
+    /* skills */
+    .skills > ul > h2{
+        font-size: 1.4rem;
+        margin-left: .8rem;
+    }
+    .skills > ul > p{
+        display: block;
+        line-height: 2rem;
+        font-size: 1rem;
+    }
+
+    /* portfolio */
+    /* .portfolioList > li > div:first-child{
+        width: 60%;
+        height: 50%;
+        margin-top: 8%;
+        margin-left: 20%;
+    }
+    .prevBtn{
+        top: 34%;
+        left: 17%;
+    }
+    .nextBtn{
+        top: 34%;
+        right: 17%;
+    } */
+
+    /* design */
+    .tabMenu{
+        width: 25%;
+    }
+    .tabList{
+        /* width: 80vw; */
+        width: 100%;
+        padding: 0 9%;
+    }
+    
+    .designPs{
+        width: 82%; /*83%*/ /*80vw*/
+    }
+    .designPs > li:first-child{
+        height: 100%;
+    }
+    .designPs > li:nth-child(2){
+        height: 100%;
+        left: 18%;
+    }
+    .designPs > li:nth-child(3){
+        width: 44%;
+        height: auto;
+    }
+    .designPs > li:last-child{
+        width: 44%;
+    }
+
+    .designAi{
+        width: 82%;
+    }
+    .designAi > li:first-child{
+        height: 12.8%;
+        width: 46%;
+    }
+    .designAi > li:nth-child(2){
+        height: 32%;
+        width: auto;
+        top: 24%;
+    }
+    .designAi > li:nth-child(3){
+        height: 32%;
+        width: auto;
+    }
+    .designAi > li:nth-child(4){
+        width: 20rem;
+        height: 17.5rem;
+    }
+    .designAi > li:last-child{
+        width: 20rem;
+        height: 14.2rem;
+    }
+}
